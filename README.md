@@ -1,4 +1,4 @@
-# Computer Science for JavaScript: Regex Tutorial
+# Regex Tutorial : Matching a URL
 
 ## User Story
 
