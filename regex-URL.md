@@ -101,8 +101,3 @@ It's important to note that all special characters, including the backslash (\),
 ## Author
 
 © Udit Sachdeva, `https://github.com/usachdeva`
-
-## Links:
-
-Repo: `https://github.com/usachdeva/Regex-tutorial`
-Gist: `https://gist.github.com/usachdeva/af7e9fd1d750cb443dffb7d74975b1aa.js`
