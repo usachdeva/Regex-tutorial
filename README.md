@@ -6,7 +6,7 @@ In this tutorial, you will learn about **matching a URL**.
 ## Summary
 
 `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`  
-The above given pattern is the regex expression for searching the correct URL.
+The above given pattern is the regex expression for searching the correct URL. This is used to validate against the verified URL pattern.
 
 ## Table of Contents
 
@@ -22,6 +22,10 @@ The above given pattern is the regex expression for searching the correct URL.
 ## Regex Components
 
 ### Anchors
+
+The characters `^` and `$` are the anchors of the regex.  
+The `^` specifies the start of the regex. If is is `^Hello`, the string should start with `Hello`. It is case sensitive and must be in exact way, not even `hello`.  
+The `$` gives the end of the regex. It follows the same rules as the start. Anything before it must be same and case-sensitive.
 
 ### Quantifiers
 
