@@ -29,9 +29,27 @@ The `$` gives the end of the regex. It follows the same rules as the start. Anyt
 
 ### Quantifiers
 
+The **Quantifiers** in regex specify how many times an element (character, group, or character class) must occur to match.
+
+-   `*`: To specify zero or more times
+-   `+`: To specify one or more times
+-   `?`: To specify zero or one time
+-   `{}`: Curly brackets can provide three different ways to set limits for a match:
+    -   `{ n }`: To specify exactly n number of times
+    -   `{ n, }`: To specify at least n number of times
+    -   `{ n, x }`: To specify from a minimum of n number of times to a maximum of x number of times
+
+URL expression contains `{2,6}`, which specifies the patterb before it must contains atleast `2` and maximum `6` characters
+
 ### Grouping Constructs
 
 ### Bracket Expressions
+
+The **Bracket Expression** also known as the **positive character classes** as they specifies the characteres we want to include:
+
+-   `[\da-z\.-]`: This character class matches any digit (\d), lowercase letter (a-z), dot (.), or hyphen (-).
+-   `[a-z\.]`: This character class matches any lowercase letter (a-z) or dot (.).
+-   `[\/\w\.-]`: This character class matches any slash (\/), word character (\w which includes letters, digits, and underscores), dot (.), or hyphen (-).
 
 ### Character Classes
 
