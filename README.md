@@ -43,6 +43,22 @@ URL expression contains `{2,6}`, which specifies the patterb before it must cont
 
 ### Grouping Constructs
 
+**Grouping constructs** in regular expressions are used to treat multiple characters as a single unit. They are enclosed within parentheses `()` and serve several purposes, including capturing matched substrings, applying quantifiers to entire groups, and establishing precedence for alternation `|` operators.
+
+-   `^(https?:\/\/)?`:
+    -   This group is optional (? quantifier at the end) and captures the protocol part of the URL (http://, https://, or none).
+
+*   `([\da-z\.-]+)\.`:
+    -   Captures the domain name part of the URL, including alphanumeric characters (\d and [a-z]), dots (.), and hyphens (-), ending with a literal dot (.).
+*   `([a-z\.]{2,6})`:
+    -   Captures the top-level domain (TLD) part of the URL, ensuring it consists of lowercase letters ([a-z]) and dots (.), with a length between 2 and 6 characters.
+*   `([\/\w \.-]_)_`:
+
+    -   Captures the path part of the URL, including slashes (\/), word characters (\w), spaces ( ), dots (.), and hyphens (-). The asterisk (\*) quantifier means it can match zero or more occurrences.
+
+*   `\/?$`:
+    -   Matches an optional trailing slash (\/?), ensuring flexibility at the end of the URL.
+
 ### Bracket Expressions
 
 The **Bracket Expression** also known as the **positive character classes** as they specifies the characteres we want to include:
@@ -55,7 +71,12 @@ The **Bracket Expression** also known as the **positive character classes** as t
 
 ### The OR Operator
 
+In regex, the **OR** operator allows you to specify multiple alternative patterns to match. It is used as `|`.
+
 ### Flags
+
+In regex, **flags** modify the behavior of the regex pattern matching. They are typically used as additional parameters when compiling or executing a regex pattern to control how the matching process works. However, in many regex implementations, flags are not directly embedded in the regex pattern itself but are instead passed as arguments to functions like re.compile() or re.match().  
+The above URL regex pattern is well-formed for matching URLs and doesn't require any flags for its intended functionality.
 
 ### Character Escapes
 
