@@ -5,7 +5,7 @@ In this tutorial, you will learn about **matching a URL**.
 
 ## Summary
 
-`/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
+`/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`  
 The above given pattern is the regex expression for searching the correct URL.
 
 ## Table of Contents
@@ -39,6 +39,4 @@ The above given pattern is the regex expression for searching the correct URL.
 
 ## Author
 
-```
-© Udit Sachdeva, https://github.com/usachdeva
-```
+© Udit Sachdeva, `https://github.com/usachdeva`
