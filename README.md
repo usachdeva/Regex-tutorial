@@ -59,6 +59,14 @@ The **Bracket Expression** also known as the **positive character classes** as t
 
 ### Character Escapes
 
+**Escape characters** in regex are used to give special meaning to characters that would otherwise be treated as literals or to escape characters that have a special meaning in regex syntax. The escape character in regex is the backslash `\`.
+
+-   `\:`: specifies the `:`
+-   `\/`: specifies the `/`
+-   `\.`: specifies the `.`
+
+It's important to note that all special characters, including the backslash (\), lose their special significance inside bracket expressions.
+
 ## Author
 
 © Udit Sachdeva, `https://github.com/usachdeva`
