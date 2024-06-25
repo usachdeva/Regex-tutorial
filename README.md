@@ -30,7 +30,3 @@ Gist: `https://gist.github.com/usachdeva/af7e9fd1d750cb443dffb7d74975b1aa`
 ---
 
 © Udit Sachdeva
-
-```
-
-```
