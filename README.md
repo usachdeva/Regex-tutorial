@@ -69,6 +69,16 @@ The **Bracket Expression** also known as the **positive character classes** as t
 
 ### Character Classes
 
+A **character class** in a regex defines a set of characters, any one of which can occur in an input string to fulfill a match. The **bracket expressions** are considered character classes. There are several character classes `[]` are used to define sets of characters that the regex engine will match against.
+
+-   `.`: Matches any character except the newline character (\n).
+
+*   `\d`: Matches any Arabic numeral digit. This class is equivalent to the bracket expression [0-9].
+
+-   `\w`: Matches any alphanumeric character from the basic Latin alphabet, including the underscore (_). This class is equivalent to the bracket expression [A-Za-z0-9_].
+
+-   `\s`: Matches a single whitespace character, including tabs and line breaks
+
 ### The OR Operator
 
 In regex, the **OR** operator allows you to specify multiple alternative patterns to match. It is used as `|`.
